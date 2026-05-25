@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lost Child System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-box" id="loginBox">
+  <h2>Login</h2>
+  <input id="user" placeholder="Username">
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="container hidden" id="app">
+
+  <h1>Lost Child Identification System</h1>
+
+  <div class="card">
+    <input id="name" placeholder="Child Name">
+    <input id="age" placeholder="Age">
+    <input id="location" placeholder="Last Seen Location">
+
+    <input type="file" id="img">
+
+    <button onclick="addChild()">Report Child</button>
+  </div>
+
+  <div class="card">
+    <input id="search" onkeyup="loadChildren()" placeholder="Search...">
+  </div>
+
+  <div id="list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
